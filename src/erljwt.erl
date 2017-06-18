@@ -1,6 +1,5 @@
 -module(erljwt).
 -export([verify_token/2]).
--export([base64pad/1]).
 
 verify_token(Token, Jwks) ->
 	{Header_b64,Payload_b64,Signature_b64} = split_token(Token),
